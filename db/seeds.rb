@@ -14,3 +14,5 @@ User.create(first_name: "Jane", last_name: "Smith", email: "jane.smith@example.c
 User.create(first_name: "Emily", last_name: "Brown", email: "emily.brown@example.com", username: "emily_brown77", password: "Brownie_2024")
 User.create(first_name: "Chris", last_name: "Williams", email: "chris.williams@example.com", username: "chris_will", password: "Cr!s$W12")
 User.create(first_name: "Olivia", last_name: "Davis", email: "olivia.davis@example.com", username: "olivd21", password: "Oliv@2024")
+User.create(first_name: "Tommy", last_name: "Crowley", email: "tommy@example.com", username: "tommycrowley10", password: "next_question_please")
+User.create(first_name: "Jeremiah", last_name: "Smith", email: "jeremiah.s@example.com", username: "jsmith", password: "tuddy")
