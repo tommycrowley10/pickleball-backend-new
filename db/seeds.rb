@@ -16,3 +16,5 @@ User.create(first_name: "Chris", last_name: "Williams", email: "chris.williams@e
 User.create(first_name: "Olivia", last_name: "Davis", email: "olivia.davis@example.com", username: "olivd21", password: "Oliv@2024")
 User.create(first_name: "Tommy", last_name: "Crowley", email: "tommy@example.com", username: "tommycrowley10", password: "next_question_please")
 User.create(first_name: "Jeremiah", last_name: "Smith", email: "jeremiah.s@example.com", username: "jsmith", password: "tuddy")
+
+Match.create(team_one_player_one: 1, team_one_player_two: 2, team_two_player_one: 3, team_two_player_two: 4, team_one_score: 11, team_two_score: 7)

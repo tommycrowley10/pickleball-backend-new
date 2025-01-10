@@ -1,0 +1,8 @@
+json.team_one_player_one match.team_one_player_one
+json.team_one_player_two match.team_one_player_two
+json.team_two_player_one match.team_two_player_one
+json.team_two_player_two match.team_one_player_two
+json.team_one_score match.team_one_score
+json.team_two_score match.team_two_score
+
+
