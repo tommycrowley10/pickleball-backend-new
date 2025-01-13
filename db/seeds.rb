@@ -8,13 +8,13 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-User.create(first_name: "John", last_name: "Doe", email: "john.doe@example.com", username: "johndoe23", password: "SecurePass123!")
-User.create(first_name: "Jane", last_name: "Smith", email: "jane.smith@example.com", username: "jsmith90", password: "P@ssw0rd!")
-User.create(first_name: "Jane", last_name: "Smith", email: "jane.smith@example.com", username: "jsmith90", password: "P@ssw0rd!")
-User.create(first_name: "Emily", last_name: "Brown", email: "emily.brown@example.com", username: "emily_brown77", password: "Brownie_2024")
-User.create(first_name: "Chris", last_name: "Williams", email: "chris.williams@example.com", username: "chris_will", password: "Cr!s$W12")
-User.create(first_name: "Olivia", last_name: "Davis", email: "olivia.davis@example.com", username: "olivd21", password: "Oliv@2024")
-User.create(first_name: "Tommy", last_name: "Crowley", email: "tommy@example.com", username: "tommycrowley10", password: "next_question_please")
-User.create(first_name: "Jeremiah", last_name: "Smith", email: "jeremiah.s@example.com", username: "jsmith", password: "tuddy")
+User.create(name: "John Doe", email: "john.doe@example.com", password: "SecurePass123!")
+User.create(name: "Jane Smith", email: "jane.smith@example.com", password: "P@ssw0rd!")
+User.create(name: "Jane Smith", email: "jane.smith@example.com", password: "P@ssw0rd!")
+User.create(name: "Emily Brown", email: "emily.brown@example.com", password: "Brownie_2024")
+User.create(name: "Chris Williams", email: "chris.williams@example.com", password: "Cr!s$W12")
+User.create(name: "Olivia Davis", email: "olivia.davis@example.com", password: "Oliv@2024")
+User.create(name: "Tommy Crowley", email: "tommy@example.com", password: "next_question_please")
+User.create(name: "Jeremiah Smith", email: "jeremiah.s@example.com", password: "tuddy")
 
 Match.create(team_one_player_one: 1, team_one_player_two: 2, team_two_player_one: 3, team_two_player_two: 4, team_one_score: 11, team_two_score: 7)

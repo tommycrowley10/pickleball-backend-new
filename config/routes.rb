@@ -19,4 +19,6 @@ Rails.application.routes.draw do
 
   get "/matches" => "matches#index"
   post "/matches" => "matches#create"
+  post "/sessions" => "sessions#create"
+  delete "/sessions" => "sessions#destroy"
 end
