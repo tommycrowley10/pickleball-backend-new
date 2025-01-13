@@ -5,14 +5,17 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(
-      first_name: params[:first_name],
-      last_name: params[:last_name],
+    user = User.new(
+      name: params[:name],
       email: params[:email],
-      username: params[:username],
       password: params[:password],
+      password_confirmation: params[:password_confirmation],
     )
-    render :show
+    if user.save
+      render json: { message: "User created successfully" }, status: :created
+    else
+      render json: { errors: user.errors.full_messages }, status: :bad_request
+    end
   end
 
   def show
@@ -24,10 +27,9 @@ class UsersController < ApplicationController
     @user = User.find_by(id: params[:id])
     @user.update(
       first_name: params[:first_name] || @user.name,
-      last_name: params[:last_name] || @user.last_name,
       email: params[:email] || @user.email,
-      username: params[:username] || @user.username,
       password: params[:password] || @user.password,
+      password_confirmation: params[:password] || @user.password,
     )
     render :show
   end

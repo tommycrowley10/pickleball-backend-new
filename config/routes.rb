@@ -18,4 +18,5 @@ Rails.application.routes.draw do
   delete "/users/:id" => "users#destroy"
 
   get "/matches" => "matches#index"
+  post "/matches" => "matches#create"
 end
