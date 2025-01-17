@@ -21,4 +21,12 @@ Rails.application.routes.draw do
   post "/matches" => "matches#create"
   post "/sessions" => "sessions#create"
   delete "/sessions" => "sessions#destroy"
+
+  # config/routes.rb
+  Rails.application.routes.draw do
+    resources :matches, only: [:index, :create]
+    # Other routes
+  end
+
+  delete "/matches/:id" => "matches#destroy"
 end
